@@ -1,0 +1,2 @@
+COUNT_TOP_MEMBERS = 2.freeze
+COUNT_TOP_AVG_SCORE = 10.freeze

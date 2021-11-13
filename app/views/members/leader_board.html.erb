@@ -1,0 +1,24 @@
+<div class="row mx-md-n5">
+  <div class="col px-md-5">
+  	<h1>Leadership Board</h1>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Full Name</th>
+          <th>Avg Score</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% @final_avg_score.first(COUNT_TOP_AVG_SCORE).to_h.each do |key, value| %>
+          <tr>
+            <td><%= Member.find_by_id(key)&.full_name %></td>
+            <td><%= value %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
